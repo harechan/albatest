@@ -220,7 +220,7 @@ PIXI.loader.load((loader, resources) => {
         const tweetButton = createButton("ツイート", 100, 60, 0x0000ff, () => {
             //ツイートＡＰＩに送信
             //結果ツイート時にURLを貼るため、このゲームのURLをここに記入してURLがツイート画面に反映されるようにエンコードする
-            const url = encodeURI("https://hothukurou.com"); // ツイートに載せるURLを指定(文字はエンコードする必要がある)
+            const url = encodeURI("https://harechan.github.io/albatest/"); // ツイートに載せるURLを指定(文字はエンコードする必要がある)
             window.open(`http://twitter.com/intent/tweet?text=SCORE:${score}点で力尽きた&hashtags=sample&url=${url}`); //ハッシュタグをsampleにする
         });
         tweetButton.x = 250; // ボタンの座標指定
